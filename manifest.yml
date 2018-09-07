@@ -1,0 +1,10 @@
+---
+applications:
+- name: java-hello-galaxy
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/gs-spring-boot-0.1.0.jar
+  memory: 1G
+  instances: 1
+  host: java-hello-galaxy
+env:
+ SPRING_PROFILES_ACTIVE: cloud
